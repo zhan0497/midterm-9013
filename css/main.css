@@ -7,7 +7,7 @@ Raleway for body text   font-family: Raleway,Arial,Helvetica,sans-serif;
 
 **************************************************/
 
-@import 'https://fonts.googleapis.com/css?family=Bitter|Raleway';
+@import url('https://fonts.googleapis.com/css?family=Bitter|Raleway');
 
 * {
     padding: 0;
