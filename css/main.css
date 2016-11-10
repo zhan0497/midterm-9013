@@ -1,0 +1,298 @@
+/**************************************************
+Fonts
+Google fonts: 
+Bitter for headings,    font-family: Bitter,'Times New Roman',Times,serif;
+Raleway for body text   font-family: Raleway,Arial,Helvetica,sans-serif;
+
+
+**************************************************/
+
+@import 'https://fonts.googleapis.com/css?family=Bitter|Raleway';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: Raleway,Arial,Helvetica,sans-serif;
+}
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+h1 {
+    font: bold 4.236rem Bitter,'Times New Roman',Times,serif;
+    color: #ffffff;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+h2 {
+    font: bold 2.618rem Bitter,'Times New Roman',Times,serif;
+}
+li, p, a {
+    font-size: 1.618rem;
+}
+
+.main p, h2 {
+    padding: 1.4rem 1.4rem 0 1.4rem;
+}
+
+
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+
+.masthead {
+    background: url(../img/deer.jpg) no-repeat; 
+    background-size: cover;
+    background-position: center;   
+    width: 100%;
+    border: 1px solid #868383;
+    
+}
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;    
+}
+
+nav ul {
+    width: 100%;
+}
+
+nav li {
+    width: 100%;
+    list-style: none;
+    border-right: 1px solid #868383;
+    border-left: 1px solid #868383;
+    border-bottom: 1px solid #868383;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+    display: block;
+    font: bold 2.618rem Raleway,Arial,Helvetica,sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: #8b6a20;  
+    padding: 1.2rem 0;
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: #ffc13a;
+    
+}
+.main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main:after,
+.main:before {
+    content: " ";
+    display: table;
+}
+
+.main:after {
+    clear:both;
+}
+
+.col {
+    float: none;
+    width: 100%;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-color: azure;
+}
+
+.footer {
+    width: 100%;
+    border-top: 1px solid #868383;
+    display: block;
+    clear: both;
+    margin: 0.8rem auto;
+}
+
+.footer p,
+.footer li {
+    text-align: center;
+    padding: 0.3rem 0 0 0;
+}
+
+.footer li {
+    list-style: none;
+}
+
+@media screen and (min-width:600px) {
+    
+    .wrapper {
+        width: 100%;
+    }
+    
+    nav {
+        width: 90%;
+    }
+    
+    .mainnav {
+        display: block;
+        border-right: 1px solid #868383;
+        border-left: 1px solid #868383;
+        border-bottom: 1px solid #868383;
+    }
+    
+    .mainnav::after {
+        content: " ";
+        display: block;
+        clear: left;
+    }
+    
+    nav li {
+        width: 20%;
+        display: block;
+        float: left;
+        border: none;
+    }
+    
+    nav a,
+    nav a:link,
+    nav a:visited {
+        font-size: 1.618rem;
+    }
+    
+    .main {
+        width:  90%;
+        /*clear: both;*/
+    }
+    
+    .main h2{
+        font-size: 2.2rem;
+    }
+    
+    .main p {
+        font-size: 1.25rem;
+    }
+    
+    .col {
+        width: 50%;
+        display: block;
+        float: left;
+    }
+    
+    .col img {
+        width: 60%;
+        float: left;
+        margin: 0 0.8rem 0 0;
+    }
+    
+    .footer {
+        width: 90%;
+        margin: 1rem auto;
+    }
+    
+    .footer p,
+    .footer a {
+        font-size: 1.2rem;
+    }
+    
+    
+}
+
+@media screen and (min-width: 800px) {
+    
+    .mainnav {
+        border: none;
+    }
+    
+    nav a,
+    nav a:link,
+    nav a:visited {
+        font-size: 1.85rem;
+    }
+    
+    .col img {
+        width: 50%;
+    }
+    
+    .footer {
+        width: 100%;
+    }
+    
+    .footer p{
+        margin: 0.5rem 0;
+    }
+}
+
+@media screen and (min-width: 1200px){
+
+    nav {
+        width: 30%;
+        float: left;
+        padding: 1.5rem 0 0 0;
+    }
+    
+    .mainnav li{
+        width: 100%;
+    }
+    
+    nav a,
+    nav a:link,
+    nav a:visited {
+        font-size: 2rem;
+    }
+    
+    .main {
+        width: 70%;
+        float: left;
+        clear: none;
+    }
+    
+    .main h2 {
+        font-size: 2.4rem;
+    }
+    
+    .col{
+        margin: 0.5rem auto 1.2rem auto;
+    }
+    
+    .col img{
+        width: 55%
+    }
+    
+    .footer p,
+    .footer li {
+        display: inline-block;
+        margin: 0;
+        padding: 0 0 0 2rem;
+    }
+    
+    .footer p{
+        margin: 1rem 0 0.5rem 0;
+    }
+    
+    .footer {
+        text-align: center;
+    }
+}
