@@ -152,6 +152,10 @@ nav a:hover {
         width: 100%;
     }
     
+    h1 {
+        font-size: 4.136rem;
+    }
+    
     nav {
         width: 90%;
     }
@@ -222,6 +226,13 @@ nav a:hover {
 
 @media screen and (min-width: 800px) {
     
+    h1 {
+        font-size: 4.036rem;
+    }
+    
+    .main h2{
+        font-size: 2.15rem;
+    }
     .mainnav {
         border: none;
     }
@@ -247,6 +258,10 @@ nav a:hover {
 
 @media screen and (min-width: 1200px){
 
+    h1 {
+        font-size: 4.236rem;
+    }
+    
     nav {
         width: 30%;
         float: left;
